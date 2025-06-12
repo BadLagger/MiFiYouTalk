@@ -1,0 +1,239 @@
+/* Общие стили */
+:root {
+  --primary-color: #4CAF50; /* Зеленый из макета */
+  --text-color: #333333;
+  --light-gray: #f5f5f5;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Шапка */
+.header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px -2px 0px 0px #EFF2F2 inset; /* Тень сверху (inset — внутри) */
+  background: white; /* Чтобы тень была видна */
+}
+
+.logo-link {
+  position: absolute; /* Абсолютное позиционирование */
+  top: 20px;         /* Отступ сверху как в Figma */
+  left: 120px;       /* Отступ слева как в Figma */
+  display: block;    /* Чтобы срабатывали отступы */
+}
+
+.logo {
+  width: 51px;       /* Фиксированная ширина */
+  height: 36px;      /* Фиксированная высота */
+  object-fit: contain; /* Сохраняет пропорции */
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.nav {
+margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  flex-wrap: nowrap; /* Запрет переноса на новую строку */
+  white-space: nowrap; /* Запрет переноса текста */
+  padding: 10px 0;
+  z-index: 1; /* Если есть другие элементы с z-index */
+  overflow: visible; /* Разрешаем подменю выходить за границы */
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap; /* Важно: текст не переносится */
+}
+
+/* Убираем скролл-бар (визуально) */
+.nav::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-link:hover {
+  color: #4CAF50; /* Пример hover-эффекта */
+}
+
+/* Переписываем стили для подменю */
+.nav-item-with-submenu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-item-with-submenu .nav-link {
+  display: inline-flex; /* Чтобы иконка правильно выравнивалась */
+  align-items: center;
+}
+
+/* Иконка стрелки */
+.submenu-icon {
+  transition: transform 0.3s ease;
+  margin-left: 4px;
+}
+
+.nav-item-with-submenu:hover .submenu-icon {
+  transform: rotate(180deg);
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  padding: 8px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+/* Показываем подменю при наведении */
+.nav-item-with-submenu:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Стили для ссылок в подменю */
+.submenu-link {
+  display: block;
+  padding: 8px 16px;
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.submenu-link:hover {
+  background: #f5f5f5;
+}
+
+.btn-subscribe {
+  /* Размеры */
+  width: 230px;
+  height: 48px;
+  
+  /* Отступы (padding) */
+  padding: 14px 20px; /* Сокращённая запись (top/bottom: 14px, left/right: 20px) */
+  
+  /* Позиционирование (если нужно точное расположение) */
+  position: absolute; /* Если нужно фиксированное положение */
+  top: 14px;
+  left: 1090px;
+  margin-left: auto; 
+  
+  /* Стили кнопки */
+  background: #4CAF50; /* Зелёный цвет из :root */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+  
+  /* Выравнивание текста */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Расстояние между текстом и иконкой (если будет) */
+}
+
+/* Ховер-эффект */
+.btn-subscribe:hover {
+  background: #45a049; /* Темнее на hover */
+}
+
+/* Фокус (для доступности) */
+.btn-subscribe:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
+}
+
+/* Герой-секция */
+.hero {
+  background: var(--light-gray);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.hero-text {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+/* Карточки статей */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 60px 0;
+}
+
+.post-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 20px;
+}
+
+.post-title {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+.post-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Футер */
+.footer {
+  padding: 40px 0;
+  text-align: center;
+  background: var(--light-gray);
+}
