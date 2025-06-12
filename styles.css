@@ -40,6 +40,7 @@ body {
   width: 51px;       /* Фиксированная ширина */
   height: 36px;      /* Фиксированная высота */
   object-fit: contain; /* Сохраняет пропорции */
+  margin-right: auto;
 }
 
 .logo:hover {
@@ -144,10 +145,9 @@ margin: 0 auto;
   padding: 14px 20px; /* Сокращённая запись (top/bottom: 14px, left/right: 20px) */
   
   /* Позиционирование (если нужно точное расположение) */
-  position: absolute; /* Если нужно фиксированное положение */
   top: 14px;
   left: 1090px;
-  margin-left: auto; 
+  margin-left: auto;
   
   /* Стили кнопки */
   background: #4CAF50; /* Зелёный цвет из :root */

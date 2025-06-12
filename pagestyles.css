@@ -1,0 +1,82 @@
+body {
+    font-family: 'Montserrat';
+    width: 1440px;
+    height: 2283px;
+    margin: 0 auto;
+}
+
+.header {
+    width: inherit;
+    height: 76px;
+    margin: 0 auto;
+    box-shadow: 0px -2px 0px 0px #EFF2F2 inset;
+}
+
+.header-container {
+    display: flex;
+}
+
+.logo {
+    width: 51px;
+    height: 36px;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.header-nav {
+    display: flex;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 222px;
+    max-width: 704px;
+    max-height: 16px;
+    gap: 30px;
+}
+
+.header-nav-href, .header-nav-submenu {
+    font-weight: 500;
+    font-size: 14px;
+    color: #333333;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+}
+
+.header-nav-submenu {
+    display: flex;
+    gap: 8px;
+}
+
+.header-nav-submenu-icon {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    margin-top: 3.9px;
+}
+
+.header-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 1090px;
+    max-width: 230px;
+    max-height: 48px;
+    border-radius: 4px;
+    border-width: 0;
+    padding-top: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 14px;
+    background-color: #E3F5F5;
+    color: #03B2A5;
+    gap: 10px;
+}
+
+.header-nav-href:hover,
+.header-button:hover, 
+.header-nav-submenu-icon:hover {
+    cursor: pointer;
+}
+
