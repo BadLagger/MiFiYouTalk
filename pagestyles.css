@@ -74,9 +74,80 @@ body {
     gap: 10px;
 }
 
+
+.header-burger-button {
+    display: none;
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 708px;
+    width: 40px;
+    height: 40px;
+    border-width: 0;
+    background-color: #FFFFFF;
+}
+
+.header-burger-button-icon {
+    width: 18px;
+    height: 14px;
+    fill: none; 
+}
+
 .header-nav-href:hover,
 .header-button:hover, 
 .header-nav-submenu-icon:hover {
     cursor: pointer;
 }
 
+/* IPad Mini */
+@media (max-width: 768px) {
+    body {
+        width: 768px;
+        height: 3551px;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .header {
+        box-shadow: none;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    .header-burger-button {
+        display: flex;
+    }
+}
+
+ /*IPad Pro*/ 
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        width: 1024px;
+        height: 2242px;
+    }
+
+    .logo {
+        margin-left: 32px;
+    }
+
+    .header {
+        box-shadow: none;
+    }
+
+    .header-nav {
+        margin-left: 115px;
+        max-width: 627px;
+        gap: 16px;
+    }
+
+    .header-button {
+        margin-left: 762px;
+    }
+}
