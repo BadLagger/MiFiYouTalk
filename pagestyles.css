@@ -3,6 +3,7 @@ body {
     width: 1440px;
     height: 2283px;
     margin: 0 auto;
+    position: relative;
 }
 
 .header {
@@ -90,6 +91,22 @@ body {
     width: 18px;
     height: 14px;
     fill: none; 
+}
+
+.breadcrumbs {
+    display: flex;
+    position: absolute;
+    top: 92px;
+    margin-left: 126px;
+    gap: 8px;
+}
+
+.main-breadcrumbs-href {
+    font-weight: 400;
+    font-size: 12px;
+    color: #333333;
+    letter-spacing: 0.25px;
+    text-decoration: none;
 }
 
 .header-nav-href:hover,
