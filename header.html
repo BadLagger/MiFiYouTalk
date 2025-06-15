@@ -1,0 +1,44 @@
+<!-- header.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <base target="_parent"> <!-- Важно для корректных ссылок -->
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <img src="resources/header/logo.png" class="logo">
+        <nav class="header-nav">
+            <a href="blog.html" class="header-nav-href">О нас</a>
+            <a href="blog.html" class="header-nav-href">Тарифы</a>
+            <a href="blog.html" class="header-nav-href">Для бизнеса</a>
+            <a href="blog.html" class="header-nav-href">Психологам</a>
+            <a href="blog.html" class="header-nav-href">Сертификат</a>
+            <a href="blog.html" class="header-nav-submenu">
+                Материалы
+                <svg class="header-nav-submenu-icon" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.09998 4.8999L6.99998 9.0999L11.9 4.8999" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a href="blog.html" class="header-nav-href">FAQ</a>
+        </nav>
+        <button class="header-button">Подобрать психолога</button>
+
+        <button class="header-burger-button">
+            <svg class="header-burger-button-icon" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 1C0 0.447715 0.447715 0 1 0H17C17.5523 0 18 0.447715 18 1C18 1.55228 17.5523 2 17 2H1C0.447716 2 0 1.55228 0 1ZM0 7C0 6.44772 0.447715 6 1 6H17C17.5523 6 18 6.44772 18 7C18 7.55228 17.5523 8 17 8H1C0.447716 8 0 7.55228 0 7ZM0 13C0 12.4477 0.447715 12 1 12H17C17.5523 12 18 12.4477 18 13C18 13.5523 17.5523 14 17 14H1C0.447716 14 0 13.5523 0 13Z" fill="#03B2A5"/>
+            </svg>
+        </button>
+    </div>
+</header>
+</body>
+</html>
