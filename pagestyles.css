@@ -137,9 +137,30 @@ h1 {
     position: absolute;
     top: 228px;
     margin-left: 120px;
-    max-width: 1181px;
     max-height: 32px;
     gap: 8px;
+}
+
+.main-panel-button {
+    display: flex;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 1px solid #C1C5CD;  
+    border-radius: 24px;
+    border-width: 1;
+    padding-top: 6px;
+    padding-right: 8px;
+    padding-bottom: 6px;
+    padding-left: 8px;
+    gap: 4px;
+}
+
+.main-panel-button:hover {
+    border: 2px solid #16C8BB;
+    cursor: pointer;
 }
 
 /* IPad Mini */
