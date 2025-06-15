@@ -120,6 +120,18 @@ body {
     cursor: pointer;
 }
 
+h1 {
+    display: flex;
+    position: absolute;
+    font-weight: 700;
+    font-size: 48px;
+    top: 140px;
+    margin-left: 120px;
+    max-width: 552px;
+    max-height: 56px;
+    gap: 16px;
+}
+
 /* IPad Mini */
 @media (max-width: 768px) {
     body {
