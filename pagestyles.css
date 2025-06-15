@@ -132,6 +132,16 @@ h1 {
     gap: 16px;
 }
 
+.main-buttons-panel {
+    display: flex;
+    position: absolute;
+    top: 228px;
+    margin-left: 120px;
+    max-width: 1181px;
+    max-height: 32px;
+    gap: 8px;
+}
+
 /* IPad Mini */
 @media (max-width: 768px) {
     body {
