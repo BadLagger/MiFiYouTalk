@@ -93,10 +93,71 @@ body {
     fill: none; 
 }
 
+.main-top-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main-middle-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: 24px;
+    gap: 24px;
+}
+
+.main-article-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    max-height: 499px;
+    gap: 24px;
+}
+
+.main-big-article {
+    display: flex;
+    flex-direction: column;
+    width: 588px;
+    height: 499px;
+    min-width: 588px;
+    min-height: 499px;
+    max-width: 588px;
+    max-height: 499px;
+    overflow: hidden;
+    border: 1px solid var(--border-color, #000000);
+    border-radius: var(--border-radius, 16px);
+    box-sizing: border-box;
+}
+
+.main-article-img {
+    display: flex;
+    flex-direction: row;
+    height: 260px;
+    min-height: 260px;
+    max-height: 260px;
+    overflow: hidden;
+    gap: 0;
+}
+
+.main-little-article {
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+    height: 475px;
+    min-width: 384px;
+    min-height: 475px;
+    max-width: 384px;
+    max-height: 475px;
+    overflow: hidden;
+    border: 1px solid var(--border-color, #C1C5CD);
+    border-radius: var(--border-radius, 16px);
+    box-sizing: border-box;
+}
+
 .breadcrumbs {
     display: flex;
-    position: absolute;
-    top: 92px;
+    margin-top: 16px;
     margin-left: 126px;
     max-width: 108px;
     max-height: 18px;
@@ -122,10 +183,8 @@ body {
 
 h1 {
     display: flex;
-    position: absolute;
     font-weight: 700;
     font-size: 48px;
-    top: 140px;
     margin-left: 120px;
     max-width: 552px;
     max-height: 56px;
@@ -134,8 +193,6 @@ h1 {
 
 .main-buttons-panel {
     display: flex;
-    position: absolute;
-    top: 228px;
     margin-left: 120px;
     max-height: 32px;
     gap: 8px;
@@ -150,12 +207,37 @@ h1 {
     background-color: #FFFFFF;
     border: 1px solid #C1C5CD;  
     border-radius: 24px;
-    border-width: 1;
+    border-width: 1px;
     padding-top: 6px;
     padding-right: 8px;
     padding-bottom: 6px;
     padding-left: 8px;
     gap: 4px;
+}
+
+.main-article-tag-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.main-article-tag {
+    pointer-events: none;
+    opacity: 0.7;
+    width: max-content;
+}
+.main-article-tag::before{
+    content: "";
+    display: inline-block;
+    background-image: url('resources/header/unicorn.png');
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 6px;
 }
 
 .main-panel-button:hover {
