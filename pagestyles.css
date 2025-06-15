@@ -116,6 +116,7 @@ body {
 }
 
 .main-big-article {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -142,6 +143,7 @@ body {
 }
 
 .main-little-article {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     position: relative;
