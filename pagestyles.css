@@ -198,7 +198,11 @@ body {
 
 .header-nav-href:hover,
 .header-button:hover, 
-.header-nav-submenu-icon:hover {
+.header-nav-submenu-icon:hover,
+.footer-input-button,
+.footer-lowest-text,
+.footer-circle-logo-img,
+ .footer-sk-logo-img {
     cursor: pointer;
 }
 
@@ -315,6 +319,144 @@ h4 {
     cursor: pointer;
 }
 
+.footer {
+    position: absolute;
+    top: 1981px;
+    width: 1440px;
+    height: 302px;
+    background-color: #2963A3;
+}
+
+.footer-info-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: 120px;
+    max-width: 1200px;
+    max-height: 184px;
+    gap: 93px;
+}
+
+.footer-info-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-info-menu-less-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 486px;
+}
+
+.footer-href {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-h4{
+    color: #FFFFFF;
+}
+
+.footer-input-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border-color: #9D9D9D;
+    border-width: 1px;
+    width: 384px;
+    height: 48px;
+}
+
+.footer-input {
+    border-width: 0px;
+    width: 320px;
+    border-radius: 4px;
+    padding-left: 16px;
+    font-size: 14px;
+    font-family: inherit;
+    border-color: #9D9D9D;
+}
+
+.footer-input-button {
+    border-width: 0px;
+    width: 64px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #16C8BB;
+}
+
+.footer-input-button::before{
+    content: "";
+    display: inline-block;
+    background-image: url('resources/footer/button_input.png');
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer-rights-text {
+    font-size: 12px;
+    color: #FFFFFF;
+    opacity: 70%;
+}
+
+.footer-logo-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.footer-logo-container-circle {
+    gap: 18px;
+}
+
+.footer-sk-logo-img {
+    width: 100px;
+    height: 50px;
+}
+
+.footer-sk-logo-participant-img {
+    margin-top: 19px;
+    width: 113px;
+    height: 20px;
+}
+
+.footer-circle-logo-img {
+    margin-top: 20px;
+    width: 32px;
+    height: 32px;
+}
+
+.footer-line {
+    height: 1px;
+    width: 1200px;
+    background: #9D9D9D;
+    opacity: 30%;
+    margin-top: 24px;
+}
+
+.footer-lowest-string-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    margin-left: 120px;
+    gap: 48px;
+}
+
+.footer-lowest-text {
+    font-size: 14px;
+    opacity: 70%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
 /* IPad Mini */
 @media (max-width: 768px) {
