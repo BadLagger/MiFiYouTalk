@@ -213,7 +213,7 @@ body {
     display: flex;
     margin-top: 16px;
     margin-left: 126px;
-    max-width: 108px;
+    max-width: 536px;
     max-height: 18px;
     gap: 8px;
 }
@@ -490,6 +490,11 @@ h4 {
     opacity: 70%;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.article-page-h1 {
+    max-width: 690px;
+    max-height: 168px;
 }
 
 /* IPad Mini */
