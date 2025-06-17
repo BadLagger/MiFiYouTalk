@@ -535,6 +535,36 @@ h4 {
     height: 331px;
 }
 
+.article-main-content {
+    width: 588px;
+    height: 274px;
+}
+
+.article-main-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.article-main-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    text-decoration: underline;
+}
+
+.article-main-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-image: url('resources/article/green_marker.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
 .article-qlink-container {
     display: flex;
     flex-direction: column;
