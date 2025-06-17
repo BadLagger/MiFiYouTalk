@@ -502,12 +502,37 @@ h4 {
 .article-main-sub-container {
     display: flex;
     flex-direction: column;
+}
+
+.article-main-left-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 54px;
+    margin-left: 126px;
+    gap: 16px;
+}
+
+.article-main-left-sub-container {
+    display: flex;
+    flex-direction: column;
     gap: 24px;
 }
 
 .article-page-h1 {
     max-width: 690px;
     max-height: 168px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.article-author {
+    font-size: 14px;
+    color: #494949;
+}
+
+.article-main-img {
+    width: 690px;
+    height: 331px;
 }
 
 .article-qlink-container {
