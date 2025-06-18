@@ -713,6 +713,37 @@ h4 {
     gap: 4px;
 }
 
+.article-person-info-block{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 16px;
+}
+
+.article-person-name {
+    display: inline-flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.article-person-post {
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.article-person-exp {
+    display: inline-flex;
+    font-size: 14px;
+    gap: 4px;
+    color: #A2A7B1;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /* IPad Mini */
 @media (max-width: 768px) {
