@@ -760,6 +760,11 @@ h4 {
     margin-bottom: 0px;
 }
 
+.article-gift-container {
+    width: 290px;
+    height: 292px;
+}
+
 /* IPad Mini */
 @media (max-width: 768px) {
     body {
