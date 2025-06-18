@@ -590,6 +590,35 @@ h4 {
     font-size: 16px;
 }
 
+.article-blue-notation {
+    width: 690px;
+    height: 162px;
+    background-color: #F3F7FE;
+    border-radius: 16px;
+}
+
+.article-blue-notation-container {
+    margin: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-quotes-img {
+    width: 55px; 
+    height: 36px;
+    opacity: 0.6;
+    position: absolute;
+    z-index: 1;
+}
+
+.article-blue-notation-text {
+    margin-top: 10px;
+    font-size: 16px;
+    font-style: italic;
+    position: relative;
+    z-index: 2;
+}
 
 .article-qlink-container {
     display: flex;
@@ -602,6 +631,7 @@ h4 {
     margin-top: 88px;
     gap: 24px;
 }
+
 
 
 .article-qlink-img {
