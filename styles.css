@@ -507,6 +507,7 @@ h4 {
 .article-main-left-container {
     display: flex;
     flex-direction: column;
+    font-weight: 500;
     margin-top: 54px;
     margin-left: 126px;
     gap: 16px;
