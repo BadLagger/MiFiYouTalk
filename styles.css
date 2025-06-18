@@ -743,7 +743,22 @@ h4 {
     align-items: center;
 }
 
+.article-person-hr {
+    width: 250px;
+    margin-top: 20px;
+    background-color: #A2A7B1;
+    opacity: 0.3;
+}
 
+.article-person-notes {
+
+}
+
+.article-person-notes-h5 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
 
 /* IPad Mini */
 @media (max-width: 768px) {
