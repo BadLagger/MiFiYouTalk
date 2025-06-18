@@ -585,6 +585,11 @@ h4 {
     display: none;
 }
 
+.article-main-text {
+    width: 690px;
+    font-size: 16px;
+}
+
 
 .article-qlink-container {
     display: flex;
