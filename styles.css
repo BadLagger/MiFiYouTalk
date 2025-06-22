@@ -830,6 +830,40 @@ h4 {
     height: 331px;
 }
 
+.article-big-block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 691px;
+    gap: 24px;
+}
+
+.article-big-block-with-spot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 168px;
+}
+
+.article-spot-img {
+    width: 240px;
+    height: 168px;
+    z-index: 2;
+    position: absolute;
+}
+
+.article-big-block-with-spot-text {
+    font-style: italic;
+    color: #333333;
+    position: absolute;
+    z-index: 1;
+    margin-top: 24px;
+    width: 485px;
+    height: 96px;
+    text-align: center;
+}
+
 /* IPad Mini */
 @media (max-width: 768px) {
     body {
