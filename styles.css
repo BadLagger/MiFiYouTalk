@@ -865,7 +865,7 @@ h4 {
     opacity: 0.8;
 }
 
-.article-big-block-hat-woman {
+.article-big-block-with-picture {
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -874,6 +874,11 @@ h4 {
 .article-big-block-hat-woman-img {
     width: 282px;
     height: 380px;
+}
+
+.article-big-block-hands-img {
+    width: 281px;
+    height: 174px;
 }
 
 .article-big-block-exersise {
