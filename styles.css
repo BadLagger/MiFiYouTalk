@@ -865,6 +865,17 @@ h4 {
     opacity: 0.8;
 }
 
+.article-big-block-hat-woman {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.article-big-block-hat-woman-img {
+    width: 282px;
+    height: 380px;
+}
+
 /* IPad Mini */
 @media (max-width: 768px) {
     body {
