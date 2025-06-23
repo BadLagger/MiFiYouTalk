@@ -901,6 +901,41 @@ h4 {
     background-color: rgba(3, 178, 165, 0.1);
 }
 
+.article-big-block-with-up-picture {
+    display: flex;
+    flex-direction: column;
+    width: 333px;
+    height: 451px;
+    gap: 24px;
+}
+
+.article-big-block-with-up-picture-img {
+    width: 333px;
+    height: 235px;
+}
+
+.article-big-block-lightning-img {
+    margin: auto;
+    width: 178.75px;
+    height: 32px;
+}
+
+.article-big-block-end {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.article-big-block-end-text {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    gap: 8px;
+    color: #2963A3;
+    font-size: 14px;
+}
+
 /* IPad Mini */
 @media (max-width: 768px) {
     body {
