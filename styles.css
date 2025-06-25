@@ -968,6 +968,11 @@ h4 {
     height: 60px;
 }
 
+.article-before-footer-img {
+    width: 520px;
+    height: 330px;
+}
+
 /* IPad Mini */
 @media (max-width: 768px) {
     body {
