@@ -987,6 +987,16 @@ h4 {
     pointer-events: none;
 }
 
+.little-red-spot {
+    position: absolute;
+    left:1367px;
+    top: 5100px;
+    width: 73px;
+    height: 240px;
+    z-index: -1;
+    pointer-events: none;
+}
+
 /* IPad Mini */
 @media (max-width: 768px) {
     body {
