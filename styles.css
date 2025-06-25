@@ -959,6 +959,15 @@ h4 {
     width: 348px;
 }
 
+.article-before-footer-button {
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    align-self: flex-start;
+    padding: 20px 24px;
+    height: 60px;
+}
+
 /* IPad Mini */
 @media (max-width: 768px) {
     body {
