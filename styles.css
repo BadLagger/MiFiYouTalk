@@ -1130,4 +1130,31 @@ gi
         max-width: 440px;
     }
 
+    .article-main-container {
+        gap: 24px;
+    }
+
+    .article-main-img {
+        width: 714px;
+    }
+
+    .article-qlink-container {
+        width: 222px;
+        height: 495px;
+    }
+
+    .article-qlink-img {
+        width: 181px;
+        height: 145px;
+    }
+
+    .article-text-box {
+        width: 182px;
+        line-height: 1.5;
+    }
+
+    .article-text-box-button {
+        margin-top: 54px;
+        width: 182px;
+    }
 }
