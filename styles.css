@@ -1066,7 +1066,7 @@ gi
     .main-panel-button {
         display: flex;
         flex: 0 0 auto;
-        max-width: 240px;
+        max-width: 255px;
         white-space: nowrap;
     }
 
@@ -1074,4 +1074,60 @@ gi
         border: 2px solid #16C8BB;
         cursor: pointer;
     }
+
+    .main-big-article {
+        width: 468px;
+        min-width: 468px;
+        max-width: 468px;
+    }
+
+    .main-little-article {
+        width: 304px;
+        height: 458px;
+        min-width: 304px;
+        min-height: 458px;
+        max-width: 304px;
+        max-height: 458px;
+    }
+
+    .main-article-img {
+        height: 206px;
+        min-height: 206px;
+        max-height: 206px;
+    }
+
+    .main-article-date-little-top {
+        top: 424px;
+    }
+
+    .main-button {
+        margin-left: 400px;
+    }
+
+    .footer {
+        width: 1024px;
+        height: 302px;
+        background-color: #2963A3;
+    }
+
+    .footer-info-container {
+        margin-left: 38px;
+        max-width: 960px;
+        max-height: 184px;
+        gap: 30px;
+    }
+
+    .footer-line {
+        margin-top: 12px;
+    }
+
+    .footer-lowest-string-container {
+        margin-top: 8px;
+        margin-left: 38px;
+    }
+
+    .footer-info-menu-less-gap {
+        max-width: 440px;
+    }
+
 }
